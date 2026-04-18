@@ -1,0 +1,175 @@
+/* Bài 1 */
+.main-nav {
+    color: #1d4ed8;
+}
+
+.main-nav > ul > li > a {
+    background: #f1f5f9;
+
+}
+
+h2 + p{
+    color: #64748b;
+}
+
+h2 ~ p{
+    color: #0f172a;
+}
+
+.author a{
+    color: #f97316;
+}
+
+/* Bài 2 */
+.site-main  {
+    .post-content {
+    background: white; 
+}
+}
+
+.site-main .post-title {
+    .post-title {
+    color: #0f172a;
+}
+}
+
+.site-main{
+    .post-content {
+    &:hover{
+        background: #f8fafc;}
+    
+    }
+    &:hover .post-title{
+        color: #2563eb;
+
+}
+}
+
+article.post {
+    &.featured {
+    background: #fefce8;
+}
+}
+
+/* Bài 3 */
+a{
+    &:link{
+        color: #2563eb;
+    }
+    &:visited{
+        color: #9333ea;
+    }
+    &:hover{
+        color: #1e40af;
+    }
+    &:active{
+        color: #1e3a8a;
+    }
+}
+
+.btn.btn-primary {
+    background:#2563eb;
+    color: white;
+    &:hover{
+        background: #3b82f6;
+    }
+    &:active{
+        background: #1d4ed8;
+    }  
+}
+button {
+    &:disabled
+    {
+        background: #94a3b8;
+        color: #cbd5e1;
+    }
+}
+
+input{
+    &:focus{
+        background: #eff6ff;
+    }
+}
+
+/* Bài 4 */
+.comparison-table tbody tr {
+    &:nth-child(odd){
+        background: #f8fafc;
+    }
+    &:nth-child(even){
+        background: white;
+    }
+    &:last-child{
+        background: #dbeafe;
+    }
+
+}
+
+.comparison-table thead tr{
+    background: #0f172a;
+    color: white;
+}
+
+.sidebar .widget .widget-search, .sidebar .widget .widget-categories {
+    background: white;
+}
+
+/* Bài 5 */
+.lead {
+    &::first-line{
+        color: #0f172a;
+    }
+    &::first-letter{
+        color: #2563eb;
+    }
+}
+
+blockquote{
+    &::before{
+        content: "“";
+        color: #cbd5e1;
+    }
+}
+
+.steps li {
+    &::marker{
+        color: #2563eb;
+    }
+}
+
+::selection {
+    background: #bfdbfe;
+    color: #0f172a;
+}
+
+.badge {
+    &::before{
+        content:"•";
+        color: #ef4444;
+    }
+}
+
+/* Bài 6 */
+input[required]{
+    background: #fffbeb;
+}
+
+a[href^="https://"]{
+    color: #2563eb;
+}
+
+a[href$=".pdf"]{
+    color: #ea580c;
+}
+
+button[class*="btn"]{
+    background: #e2e8f0;
+}
+
+[lang|="vi"]{
+    color: #0f172a;
+}
+
+tr[data-priority="high"]{
+    background: #fee2e2;
+}
