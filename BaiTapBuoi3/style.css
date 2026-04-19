@@ -1,9 +1,9 @@
 /* Bài 1 */
-.main-nav {
+.main-nav a {
     color: #1d4ed8;
 }
 
-.main-nav > ul > li > a {
+.main-nav > ul > li  {
     background: #f1f5f9;
 
 }
@@ -21,38 +21,29 @@ h2 ~ p{
 }
 
 /* Bài 2 */
-.site-main  {
-    .post-content {
-    background: white; 
-}
-}
-
-.site-main .post-title {
-    .post-title {
-    color: #0f172a;
-}
-}
-
-.site-main{
-    .post-content {
-    &:hover{
-        background: #f8fafc;}
+.post {
+    background: white;
     
+    .post-title {
+        color: #0f172a;
     }
-    &:hover .post-title{
-        color: #2563eb;
-
-}
-}
-
-article.post {
+    
+    &:hover {
+        background: #f8fafc;
+        
+        .post-title {
+            color: #2563eb;
+        }
+    }
+    
     &.featured {
-    background: #fefce8;
+        background: #fefce8;
+    }
 }
-}
+
 
 /* Bài 3 */
-a{
+.post-content a{
     &:link{
         color: #2563eb;
     }
@@ -67,22 +58,15 @@ a{
     }
 }
 
-.btn.btn-primary {
-    background:#2563eb;
+.btn {
+    background: #2563eb;
     color: white;
-    &:hover{
-        background: #3b82f6;
-    }
-    &:active{
-        background: #1d4ed8;
-    }  
 }
-button {
-    &:disabled
-    {
-        background: #94a3b8;
-        color: #cbd5e1;
-    }
+.btn:hover { background: #3b82f6; }
+.btn:active { background: #1d4ed8; }
+.btn:disabled {
+    background: #94a3b8;
+    color: #cbd5e1;
 }
 
 input{
@@ -92,6 +76,10 @@ input{
 }
 
 /* Bài 4 */
+.steps li:first-child { color: #16a34a; }
+.steps li:last-child { color: #dc2626; }
+.steps li:nth-child(3) { background: #fef3c7; }
+
 .comparison-table tbody tr {
     &:nth-child(odd){
         background: #f8fafc;
