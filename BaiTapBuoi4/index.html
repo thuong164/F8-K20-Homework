@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4</title>
+    <style>
+        h1 {
+            width: 100%;
+            height: 40px;
+            background:#f98000;
+            color: #f9fafb;
+        }
+        p{
+            background: #e5e7eb;
+            color: #111827;
+            width: 280px;
+        }
+        .description{
+            background: #f3f4f6;
+            color: #111827;
+        }
+        .description div {
+            padding: 10px 5px;
+            margin-top: 12px;
+            background: #ffffff;
+            color: #9ca3af;
+        }
+        #light:checked + label {
+            background: #fff8cc;
+            color: #8b5e00;
+        }
+        #light:checked ~ .description .theme-light {
+            background: #fff8cc;
+            color: #111827;
+        }
+        #dark:checked + label{
+            background: #111827;
+            color: #f9fafb;
+        }
+        #dark:checked ~ .description .theme-dark {
+            background: #111827;
+            color: #f9fafb;
+        }
+        #red:checked + label {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        #red:checked ~ .description .color-red {
+            background: #fee2e2;
+            color: #7f1d1d;
+        }
+        #blue:checked + label {
+            background: #dbeafe;
+            color: #1d4ed8;
+        }
+        #blue:checked ~ .description .color-blue {
+            background: #dbeafe;
+            color: #1d4ed8;
+        }
+        #green:checked + label {
+            background: #dcfce7;
+            color: #166534;
+        }
+        #green:checked ~ .description .color-green {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        #vietnamese:checked + label {
+            background: #bbf7d0;
+            color: #166534;
+        }
+        #vietnamese:checked ~ .description .language-vietnamese {
+            color: #166534;
+            font-size: 20px;
+        }
+        #english:checked + label {
+            background: #bfdbfe;
+            color: #1d4ed8;
+        }
+        #english:checked ~ .description .language-english {
+            color: #1d4ed8;
+            font-size: 20px;
+        }
+        #advanced:checked + label {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        #advanced:checked ~ .description .option-advanced {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        #eco-mode:checked + label {
+            background: #bbf7d0;
+            color: #15803d;
+        }
+        #eco-mode:checked ~ .description .option-eco-mode {
+            background: #bbf7d0;
+            color: #166534;
+        }
+        #warning:checked + label {
+            background: #fee2e2;
+            color: #b91c1c;
+        }
+        #warning:checked ~ .description .option-warning {
+            background: #fee2e2;
+            color: #b91c1c;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Trung tâm cấu hình giao diện (Demo)</h1>
+
+        <div class="content">
+            <p>Chọn giao diện (Theme):</p>
+            <input type="radio" id="light" name="theme" >
+            <label for="light">Light</label>
+
+            <input type="radio" id="dark" name="theme">
+            <label for="dark">Dark</label>
+
+            <p>Chọn màu chủ đạo (Color):</p>
+            <input type="radio" id="red" name="color" >
+            <label for="red">Red</label>
+
+            <input type="radio" id="blue" name="color">
+            <label for="blue">Blue</label>
+
+            <input type="radio" id="green" name="color">
+            <label for="green">Green</label>
+
+            <p>Chọn ngôn ngữ (Language):</p>
+            <input type="radio" id="vietnamese" name="language" >
+            <label for="vietnamese">VI</label>
+
+            <input type="radio" id="english" name="language">
+            <label for="english">EN</label>
+
+            <p>Tùy chọn bổ sung (Options - Checkbox):</p>
+            <input type="checkbox" id="advanced">
+            <label for="advanced">Hiển thị mô tả nâng cao</label>
+
+            <input type="checkbox" id="eco-mode">
+            <label for="eco-mode">Bật chế độ Eco</label>
+
+            <input type="checkbox" id="warning">
+            <label for="warning">Hiển thị cảnh báo quan trọng</label>
+
+            <div class="description">
+                <div class="theme-light">Theme Light: Giao diện sáng, chữ đen.</div>
+                <div class="theme-dark">Theme Dark: Giao diện tối, chữ sáng.</div>
+                <div class="color-red">Màu Red: được nhấn mạnh khi chọn Red.</div>
+                <div class="color-blue">Màu Blue: được nhấn mạnh khi chọn Blue.</div>
+                <div class="color-green">Màu Green: được nhấn mạnh khi chọn Green.</div>
+                <div class="language-vietnamese">[VI] Xin chào bạn! Khi chọn VI, dòng này rõ hơn.</div>
+                <div class="language-english">[EN] Hello, world! Khi chọn EN, dòng này rõ hơn.</div>
+                <div class="option-advanced">Mô tả nâng cao: giải thích kỹ hơn về cách các lựa chọn đang ảnh hưởng giao diện.</div>
+                <div class="option-eco-mode">Chế độ Eco: mô phỏng trạng thái tiết kiệm tài nguyên cho giao diện.</div>
+                <div class="option-warning">Cảnh báo quan trọng: khu vực dùng để nhấn mạnh thông tin hệ thống.</div>
+            </div>
+
+</div>
+</body>
+</html>
