@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Đỗ Thị Hoài Thương</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1 class="logo">Đỗ Thị Hoài Thương</h1>
+
+        <!-- Navigation menu -->
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <i class="mdi mdi-home"></i> Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        <i class="mdi mdi-account"></i> About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="skills.html">
+                        <i class="mdi mdi-lightbulb-on"></i> Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        <i class="mdi mdi-folder"></i> Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="blog.html">
+                        <i class="mdi mdi-post"></i> Blog
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        <i class="mdi mdi-email"></i> Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+        <!-- Section: Giới thiệu trang liên hệ -->
+        <section>
+            <div>
+                <h2>Liên hệ với tôi</h2>
+
+                <p>
+                    Nếu bạn muốn trao đổi về dự án, hợp tác, tuyển dụng hoặc góp ý cho website,
+                    hãy gửi thông tin qua biểu mẫu bên dưới.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section: Form liên hệ -->
+        <section>
+            <div>
+                <h2>Form liên hệ</h2>
+
+                <form action="#" method="POST">
+                    <!-- Thống tin cơ bản -->
+                        <p>Thông tin cơ bản</p>
+
+                        <div class="form-group">
+                            <label for="fullname">Họ tên</label>
+                            <input 
+                                type="text" 
+                                id="fullname" 
+                                name="fullname" 
+                                required 
+                                minlength="2"
+                                placeholder="Nhập họ tên của bạn"
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required
+                                placeholder="example@email.com"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                pattern="[0-9]{10,11}"
+                                placeholder="Nhập số điện thoại 10-11 số"
+                            >
+                        </div>
+
+                    <!-- Chủ đề -->
+                    
+                        <p>Nội dung liên hệ<p>
+
+                        <div class="form-group">
+                            <label for="subject">Chủ đề</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">-- Chọn chủ đề --</option>
+                                <option value="project">Hỏi về dự án</option>
+                                <option value="cooperation">Hợp tác</option>
+                                <option value="recruitment">Tuyển dụng</option>
+                                <option value="other">Khác</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <p>Mức độ ưu tiên</p>
+
+                            <input 
+                                type="radio" 
+                                id="priority-low" 
+                                name="priority" 
+                                value="low" 
+                                required
+                            >
+                            <label for="priority-low">Thấp</label>
+
+                            <input 
+                                type="radio" 
+                                id="priority-medium" 
+                                name="priority" 
+                                value="medium"
+                            >
+                            <label for="priority-medium">Trung bình</label>
+
+                            <input 
+                                type="radio" 
+                                id="priority-high" 
+                                name="priority" 
+                                value="high"
+                            >
+                            <label for="priority-high">Cao</label>
+                        </div>
+
+                        <div class="form-group">
+                            <p>Dịch vụ quan tâm</p>
+
+                            <input 
+                                type="checkbox" 
+                                id="service-web" 
+                                name="services" 
+                                value="web-development"
+                            >
+                            <label for="service-web">Web Development</label>
+
+                            <input 
+                                type="checkbox" 
+                                id="service-mobile" 
+                                name="services" 
+                                value="mobile-app"
+                            >
+                            <label for="service-mobile">Mobile App</label>
+
+                            <input 
+                                type="checkbox" 
+                                id="service-uiux" 
+                                name="services" 
+                                value="ui-ux-design"
+                            >
+                            <label for="service-uiux">UI/UX Design</label>
+
+                            <input 
+                                type="checkbox" 
+                                id="service-consulting" 
+                                name="services" 
+                                value="consulting"
+                            >
+                            <label for="service-consulting">Consulting</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Tin nhắn</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="6" 
+                                required 
+                                minlength="10"
+                                placeholder="Nhập tin nhắn của bạn..."
+                            ></textarea>
+                        </div>
+
+                    <!-- Thông tin bổ sung -->
+                
+                        <p>Thông tin bổ sung</p>
+
+                        <div class="form-group">
+                            <label for="rating">Đánh giá website này: 1-5 sao</label>
+                            <input 
+                                type="range" 
+                                id="rating" 
+                                name="rating" 
+                                min="1" 
+                                max="5" 
+                                value="5"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="attachment">Đính kèm CV hoặc tài liệu nếu có</label>
+                            <input 
+                                type="file" 
+                                id="attachment" 
+                                name="attachment" 
+                                accept=".pdf,.doc,.docx"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <input 
+                                type="checkbox" 
+                                id="agree" 
+                                name="agree" 
+                                required
+                            >
+                            <label for="agree">
+                                Tôi đồng ý với 
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    Chính sách bảo mật
+                                </a>
+                            </label>
+                        </div>
+
+
+                    <!-- Buttons -->
+                    <div class="form-buttons">
+                        <button type="submit">
+                            <i class="mdi mdi-send"></i> Gửi tin nhắn
+                        </button>
+
+                        <button type="reset">
+                            <i class="mdi mdi-refresh"></i> Xóa form
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+        <!-- Section: Thông tin liên hệ -->
+        <section>
+            <div >
+                <h2>Thông tin liên hệ</h2>
+
+                <address>
+                    <p>
+                        <i class="mdi mdi-email"></i>
+                        Email:
+                        <a href="mailto:your@email.com">your@email.com</a>
+                    </p>
+
+                    <p>
+                        <i class="mdi mdi-phone"></i>
+                        Điện thoại:
+                        <a href="tel:+84123456789">+84 123 456 789</a>
+                    </p>
+
+                    <p>
+                        <i class="mdi mdi-map-marker"></i>
+                        Địa chỉ:
+                        Thành phố Hồ Chí Minh, Việt Nam
+                    </p>
+
+                    <p>
+                        <i class="mdi mdi-facebook"></i>
+                        Facebook:
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                            facebook.com
+                        </a>
+                    </p>
+
+                    <p>
+                        <i class="mdi mdi-github"></i>
+                        GitHub:
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                            github.com
+                        </a>
+                    </p>
+
+                    <p>
+                        <i class="mdi mdi-linkedin"></i>
+                        LinkedIn:
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                            linkedin.com
+                        </a>
+                    </p>
+                </address>
+            </div>
+
+
+        <!-- Section: Bản đồ -->
+        <section>
+            <div>
+                <h2>Bản đồ</h2>
+
+                <iframe 
+                    src="https://www.google.com/maps?q=Ho%20Chi%20Minh%20City%2C%20Vietnam&output=embed"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Bản đồ Thành phố Hồ Chí Minh">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Section: Giờ làm việc -->
+        <section>
+            <div>
+                <h2>Giờ làm việc</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ngày</th>
+                            <th>Thời gian</th>
+                            <th>Ghi chú</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Thứ hai</td>
+                            <td>
+                                <time datetime="08:00">08:00</time> -
+                                <time datetime="17:00">17:00</time>
+                            </td>
+                            <td>Làm việc bình thường</td>
+                        </tr>
+
+                        <tr>
+                            <td>Thứ ba</td>
+                            <td>
+                                <time datetime="08:00">08:00</time> -
+                                <time datetime="17:00">17:00</time>
+                            </td>
+                            <td>Làm việc bình thường</td>
+                        </tr>
+
+                        <tr>
+                            <td>Thứ tư</td>
+                            <td>
+                                <time datetime="08:00">08:00</time> -
+                                <time datetime="17:00">17:00</time>
+                            </td>
+                            <td>Làm việc bình thường</td>
+                        </tr>
+
+                        <tr>
+                            <td>Thứ năm</td>
+                            <td>
+                                <time datetime="08:00">08:00</time> -
+                                <time datetime="17:00">17:00</time>
+                            </td>
+                            <td>Làm việc bình thường</td>
+                        </tr>
+
+                        <tr>
+                            <td>Thứ sáu</td>
+                            <td>
+                                <time datetime="08:00">08:00</time> -
+                                <time datetime="16:30">16:30</time>
+                            </td>
+                            <td>Kết thúc sớm hơn</td>
+                        </tr>
+
+                        <tr>
+                            <td>Thứ bảy</td>
+                            <td>
+                                <time datetime="09:00">09:00</time> -
+                                <time datetime="12:00">12:00</time>
+                            </td>
+                            <td>Chỉ nhận lịch hẹn trước</td>
+                        </tr>
+
+                        <tr>
+                            <td>Chủ nhật</td>
+                            <td>Nghỉ</td>
+                            <td>Không làm việc</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <p>
+                <small>&copy; 2026 Đỗ Thị Hoài Thương. All rights reserved.</small>
+            </p>
+
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <i class="mdi mdi-facebook"></i> Facebook
+                </a>
+
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <i class="mdi mdi-instagram"></i> Instagram
+                </a>
+
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                    <i class="mdi mdi-twitter"></i> Twitter
+                </a>
+
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="mdi mdi-github"></i> Github
+                </a>
+
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <i class="mdi mdi-linkedin"></i> LinkedIn
+                </a>
+            </div>
+
+            <p>
+                <a href="#top">
+                    <i class="mdi mdi-arrow-up-bold"></i> Lên đầu trang
+                </a>
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>

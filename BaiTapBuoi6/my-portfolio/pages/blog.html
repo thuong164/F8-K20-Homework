@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Đỗ Thị Hoài Thương</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1 class="logo">Đỗ Thị Hoài Thương</h1>
+
+        <!-- Navigation menu -->
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <i class="mdi mdi-home"></i> Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        <i class="mdi mdi-account"></i> About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="skills.html">
+                        <i class="mdi mdi-lightbulb-on"></i> Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        <i class="mdi mdi-folder"></i> Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="blog.html">
+                        <i class="mdi mdi-post"></i> Blog
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        <i class="mdi mdi-email"></i> Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+        <!-- Article Header -->
+        <article class="blog-post section">
+
+            <header class="blog-header container">
+                <h1>Làm thế nào để bắt đầu học lập trình Web?</h1>
+
+                <p>
+                    Ngày đăng:
+                    <time datetime="2026-05-17">17/05/2026</time>
+                </p>
+
+                <p>
+                    Tác giả: <strong>Đỗ Thị Hoài Thương</strong>
+                </p>
+
+                <img 
+                    src="../images/blog-cover.jpg" alt="Ảnh cover bài viết"  width="1000" height="500" loading="lazy"
+                >
+            </header>
+
+            <div>
+                <ol>
+                    <li>Giới thiệu</li>
+                    <li>HTML, CSS và JavaScript là gì?</li>
+                    <li>Lộ trình học cơ bản</li>
+                    <li>Ví dụ code</li>
+                </ol>
+            </div>
+
+            <!-- Blog Content -->
+            <section>
+                <h2>1. Giới thiệu</h2>
+
+                <p>
+                    Lập trình web là một trong những hướng học phổ biến đối với sinh viên Công nghệ thông tin.
+                    Khi mới bắt đầu, nhiều bạn thường cảm thấy có quá nhiều thứ phải học như 
+                    <code>HTML</code>, <code>CSS</code>, <code>JavaScript</code>, framework, hosting và cả GitHub.
+                    Tuy nhiên, nếu biết chia nhỏ kiến thức, việc học sẽ dễ tiếp cận hơn rất nhiều.
+                </p>
+
+                <p>
+                    Theo tôi, điều quan trọng nhất khi học web không phải là học thật nhiều công nghệ cùng lúc,
+                    mà là hiểu rõ vai trò của từng phần. <strong>HTML tạo cấu trúc</strong>, 
+                    <strong>CSS tạo giao diện</strong>, còn <strong>JavaScript tạo tương tác</strong>.
+                    Khi nắm được ba phần này, người học có thể tự xây dựng những website cơ bản đầu tiên.
+                </p>
+
+                <p>
+                    Một lỗi phổ biến của người mới là chỉ xem hướng dẫn mà không tự code lại.
+                    Việc tự gõ code, tự gặp lỗi và tự sửa lỗi giúp bạn nhớ lâu hơn. Vì vậy, trong quá trình học,
+                    hãy thường xuyên nhấn <kbd>Ctrl</kbd> + <kbd>S</kbd> để lưu file và mở trình duyệt kiểm tra kết quả.
+                </p>
+            </section>
+
+            <section>
+                <h2>2. HTML, CSS và JavaScript là gì?</h2>
+
+                <p>
+                    <abbr title="HyperText Markup Language">HTML</abbr> là ngôn ngữ đánh dấu dùng để xây dựng
+                    cấu trúc nội dung của website. Ví dụ, khi muốn tạo tiêu đề, đoạn văn, danh sách hoặc hình ảnh,
+                    ta sẽ sử dụng các thẻ HTML tương ứng như <code>h1</code>, <code>p</code>, 
+                    <code>ul</code>, <code>img</code>.
+                </p>
+
+                <p>
+                    <abbr title="Cascading Style Sheets">CSS</abbr> được dùng để định dạng giao diện.
+                    CSS giúp website có màu sắc, bố cục, khoảng cách, font chữ và hiệu ứng đẹp hơn.
+                    Nếu HTML giống như bộ khung của một ngôi nhà thì CSS giống như phần trang trí bên ngoài.
+                </p>
+
+                <p>
+                    JavaScript là ngôn ngữ lập trình giúp website có tính tương tác.
+                    Ví dụ, khi người dùng bấm nút, mở menu, kiểm tra dữ liệu form hoặc thay đổi nội dung trên trang,
+                    JavaScript sẽ xử lý những hành động đó. Đây là phần giúp website trở nên 
+                    <mark>sống động và linh hoạt hơn</mark>.
+                </p>
+            </section>
+
+            <section>
+                <h2>3. Lộ trình học cơ bản</h2>
+
+                <p>
+                    Nếu mới bắt đầu, bạn nên học theo thứ tự từ dễ đến khó. Đầu tiên là HTML để hiểu cách tổ chức
+                    nội dung. Sau đó học CSS để biết cách làm giao diện đẹp hơn. Cuối cùng là JavaScript để thêm
+                    tương tác cho website.
+                </p>
+
+                <p>
+                    Trong quá trình học, bạn nên tạo các dự án nhỏ như trang giới thiệu bản thân, trang sản phẩm,
+                    trang blog hoặc form liên hệ. Các dự án này tuy đơn giản nhưng giúp bạn luyện tập nhiều kỹ năng:
+                    chia bố cục, đặt tên class, viết nội dung semantic, xử lý ảnh và liên kết các trang với nhau.
+                </p>
+
+                <p>
+                    Khi chạy code, nếu chương trình hoạt động đúng, bạn có thể thấy kết quả như:
+                    <samp>Website loaded successfully</samp>. Nếu gặp lỗi, hãy đọc kỹ thông báo lỗi, kiểm tra lại
+                    tên file, đường dẫn và cú pháp HTML.
+                </p>
+            </section>
+
+            <!-- Code Examples -->
+            <section">
+                <h2>4. Ví dụ code</h2>
+
+                <p>
+                    Dưới đây là một ví dụ HTML đơn giản. Trong ví dụ này, thẻ <code>header</code> dùng cho phần đầu
+                    trang, còn thẻ <code>main</code> dùng cho nội dung chính.
+                </p>
+
+                <h3>Ví dụ 1: Cấu trúc HTML cơ bản</h3>
+
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="vi"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Trang web đầu tiên&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Phần đầu trang --&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Xin chào&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;!-- Nội dung chính --&gt;
+    &lt;main&gt;
+        &lt;p&gt;Đây là trang web đầu tiên của tôi.&lt;/p&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                <p>
+                    Ví dụ tiếp theo là một đoạn JavaScript nhỏ. Đoạn code này lấy tên người dùng rồi in ra lời chào
+                    bằng hàm <code>console.log()</code>.
+                </p>
+
+                <h3>Ví dụ 2: JavaScript cơ bản</h3>
+
+                <pre><code>// Khai báo biến lưu tên người dùng
+let name = "Hoài Thương";
+
+// Tạo câu chào
+let message = "Xin chào, " + name + "!";
+
+// In kết quả ra console
+console.log(message);</code></pre>
+
+                <p>
+                    Khi chạy đoạn JavaScript trên, kết quả có thể hiển thị là:
+                </p>
+
+                <p>
+                    <samp>Xin chào, Hoài Thương!</samp>
+                </p>
+            </section>
+
+            <!-- Quote Section -->
+            <section >
+                <h2>5. Trích dẫn</h2>
+
+                <blockquote>
+                    <p>
+                        “Programs must be written for people to read, and only incidentally for machines to execute.”
+                    </p>
+
+                    <cite>Harold Abelson, Structure and Interpretation of Computer Programs</cite>
+                </blockquote>
+
+                <p>
+                    Trích dẫn này nhắc tôi rằng code không chỉ cần chạy đúng mà còn cần dễ đọc.
+                    Một đoạn code rõ ràng sẽ giúp bản thân và người khác dễ sửa lỗi, dễ mở rộng và dễ bảo trì hơn.
+                </p>
+            </section>
+
+            <!-- References -->
+            <section id="references" class="container">
+                <h2>6. Tham khảo</h2>
+
+                <ul>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+                            <cite>MDN Web Docs - HTML</cite>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">
+                            <cite>MDN Web Docs - CSS</cite>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">
+                            <cite>MDN Web Docs - JavaScript</cite>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">
+                            <cite>W3Schools Web Tutorials</cite>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Author Info -->
+            <section id="author-info" class="author-info container">
+                <h2>7. Thông tin tác giả</h2>
+
+                <img 
+                    src="../images/avatar.jpg"  alt="Ảnh đại diện "  width="180"  height="180" loading="lazy">
+
+                <h3>Đỗ Thị Hoài Thương</h3>
+
+                <p>
+                    Tôi là sinh viên Công nghệ thông tin, yêu thích lập trình web, thiết kế giao diện
+                    và trực quan hóa dữ liệu. Blog này được viết nhằm chia sẻ lại kiến thức cơ bản
+                    trong quá trình học tập.
+                </p>
+
+                <address>
+                    Email:
+                    <a href="mailto:your@email.com">your@email.com</a>
+                    <br>
+
+                    Điện thoại:
+                    <a href="tel:+84123456789">+84 123 456 789</a>
+                    <br>
+
+                    Địa chỉ:
+                    Thành phố Hồ Chí Minh, Việt Nam
+                </address>
+
+                <p>
+                    <a href="#top">
+                        <i class="mdi mdi-arrow-up-bold"></i> Lên đầu trang
+                    </a>
+                </p>
+            </section>
+
+        </article>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <p>
+                <small>&copy; 2026 Đỗ Thị Hoài Thương. All rights reserved.</small>
+            </p>
+
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <i class="mdi mdi-facebook"></i> Facebook
+                </a>
+
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <i class="mdi mdi-instagram"></i> Instagram
+                </a>
+
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                    <i class="mdi mdi-twitter"></i> Twitter
+                </a>
+
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="mdi mdi-github"></i> Github
+                </a>
+
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <i class="mdi mdi-linkedin"></i> LinkedIn
+                </a>
+            </div>
+
+            <p>
+                <a href="#top">
+                    <i class="mdi mdi-arrow-up-bold"></i> Lên đầu trang
+                </a>
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
