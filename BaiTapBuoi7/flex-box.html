@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            width: 60px;
+            height: 60px;
+            background-color: #567dd1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            
+        }
+        .container{
+            display: flex;
+            width: 600px;
+            height: 200px;
+            border: 1px solid red;
+            margin-bottom: 20px;
+            
+            &.container1{
+                justify-content: space-between;
+                align-items: center;
+            }
+            &.container2{
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row-reverse;
+            }
+            &.container3{
+                align-items: center;
+                flex-direction: column;
+
+                & .item.item1{
+                    margin-bottom: 20px;
+                }
+                & .item.item3{
+                    margin-top: 50px;
+                }
+
+            }
+            &.container4{
+                justify-content: center;
+                align-items: center;
+                
+                & .item.item1{
+                    margin-right: 10px;
+                }
+                & .item.item3{
+                    margin-left: 40px;
+                }
+            }
+
+            &.container5{
+                justify-content: center;
+                align-items: center;
+                flex-direction: column-reverse;
+            }
+
+            &.container6{
+                justify-content: space-between;
+
+            }
+            &.container7{
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                & .item.item1{
+                    margin-bottom: 60px;
+                }
+                & .item.item3{
+                    margin-top: 20px;
+                }
+            }
+
+            &.container8{
+                align-items: center;
+
+                & .item.item2{
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            &.container9{
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                & .item.item1{
+                    margin-bottom: 40px;
+                }
+                & .item.item3{
+                    margin-top: 40px;
+                }
+                
+            }
+
+            &.container10{
+                align-items: center;
+
+                & .item.item1{
+                    align-self: flex-start;
+                }
+                & .item.item2{
+                    margin:auto;
+            }
+                & .item.item3{
+                    align-self: flex-end;
+            }
+        
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container container1">
+        <div class="item item1"> 1</div>
+        <div class="item item2"> 2</div>
+        <div class="item item3"> 3</div>
+    </div>
+
+    <div class="container container2">
+        <div class="item item1"> 1</div>
+        <div class="item item2"> 2</div>
+        <div class="item item3"> 3</div>
+    </div>
+
+    <div class="container container3">
+        <div class="item item1"> 1</div>
+        <div class="item item2"> 2</div>
+        <div class="item item3"> 3</div>
+    </div>
+
+    <div class="container container4">
+        <div class="item item1"> 1</div>
+        <div class="item item2"> 2</div>
+        <div class="item item3"> 3</div>
+    </div>
+
+    <div class="container container5">
+        <div class="item item1"> 1</div>
+        <div class="item item2"> 2</div>
+        <div class="item item3"> 3</div>
+    </div>
+
+    <div class="container container6">
+        <div class="item item1"> 1</div>
+        <div class="item item2"> 2</div>
+        <div class="item item3"> 3</div>
+    </div>
+
+    <div class="container container7">
+        <div class="item item1"> 1</div>
+        <div class="item item2"> 2</div>
+        <div class="item item3"> 3</div>
+    </div>
+
+    <div class="container container8">
+        <div class="item item1"> 1</div>
+        <div class="item item2"> 2</div>
+        <div class="item item3"> 3</div>
+    </div>
+
+    <div class="container container9">
+        <div class="item item1"> 1</div>
+        <div class="item item2"> 2</div>
+        <div class="item item3"> 3</div>
+    </div>
+
+    <div class="container container10">
+        <div class="item item1"> 1</div>
+        <div class="item item2"> 2</div>
+        <div class="item item3"> 3</div>
+    </div>
+
+</body>
+</html>
