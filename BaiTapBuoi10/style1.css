@@ -1,0 +1,49 @@
+.box{
+    width: 200px;
+    height: 200px;
+    border: 5px solid red;
+    margin: 20px;
+    position: relative;
+}
+
+i{
+    font-size: 10px;
+    position: absolute;
+    top: 19px;
+    left: 29px;
+    animation: run 10s linear infinite;
+}
+
+@keyframes run{
+    0%{
+        transform: translate(0,0) rotate(-90deg);
+    }
+
+    25%{
+        transform: translate(200px,0) rotate(-90deg);
+    }
+
+    26%{
+        transform: translate(200px,0) rotate(0deg);
+    }
+
+    50%{
+        transform: translate(200px,200px) rotate(0deg);
+    }
+
+    51%{
+        transform: translate(200px,200px) rotate(90deg);
+    }
+
+    75%{
+        transform: translate(0,200px) rotate(90deg);
+    }
+
+    76%{
+        transform: translate(0,200px) rotate(180deg);
+    }
+
+    100%{
+        transform: translate(0,0) rotate(180deg);
+    }
+}
